@@ -9,15 +9,13 @@
 
 class Account
 {
-private:
+protected:
 	int m_account_balance = 0;
 	int m_account_number{};
 	int m_account_pin{};
 
 	std::string m_name_first{};
 	std::string m_name_last{};
-
-protected:
 	friend std::ostream& operator<<(std::ostream& out, Account& a);
 
 public:

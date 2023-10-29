@@ -60,6 +60,7 @@ void Account::Withdraw(int withdrawal_amount, int pin)
 		if (m_account_balance >= withdrawal_amount && withdrawal_amount > 0)
 		{
 			m_account_balance -= withdrawal_amount;
+			std::cout << "Successfully withdrew " << withdrawal_amount << ".\n";
 		}
 		else
 		{
